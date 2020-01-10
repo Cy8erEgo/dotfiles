@@ -1,0 +1,18 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Cyberego
+	email = cy8erego@yandex.ru
+[alias]
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	st = status
+	dump = cat-file -p	
+	lg = log --all --graph --pretty=format:'%Cred%h%Creset -%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	ch = checkout
+	co = commit
+[color]
+	ui = auto
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
