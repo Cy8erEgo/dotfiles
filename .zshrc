@@ -109,3 +109,9 @@ eval "$(pyenv virtualenv-init -)"
 # vim
 alias vim="vim -S ~/.vimrc"
 alias vi="vim"
+
+# homebrew
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+# .gitignore generating
+function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
