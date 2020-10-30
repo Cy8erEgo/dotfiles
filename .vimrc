@@ -4,19 +4,20 @@
 call plug#begin('~/.vim/plugged')
 "
 " ===== Code/project navigation =====
-Plug 'preservim/nerdtree'	" A tree explorer
-Plug 'majutsushi/tagbar'	" Class/module browser
+Plug 'preservim/nerdtree'		" A tree explorer
+Plug 'majutsushi/tagbar'		" Class/module browser
 
 " ======== Languages support ========
-Plug 'klen/python-mode'		" Python mode (docs, refactor, lints, highlighting, run and ipdb and more)
-Plug 'dense-analysis/ale'	" Asynchronous Lint Engine
-Plug 'davidhalter/jedi-vim'	" Awesome Python autocompletion
+Plug 'klen/python-mode'			" Python mode (docs, refactor, lints, highlighting, run and ipdb and more)
+Plug 'dense-analysis/ale'		" Asynchronous Lint Engine
+Plug 'davidhalter/jedi-vim'		" Awesome Python autocompletion
 
 " ============== Other ==============
-Plug 'bling/vim-airline'	" Lean & mean status/tabline
-Plug 'rosenfeld/conque-term'  	" Consoles as buffers
-Plug 'tpope/vim-surround'	" Parentheses, brackets, quotes, XML tags, and more
-Plug 'jiangmiao/auto-pairs'	" Insert or delete brackets, parens, quotes in pair
+Plug 'bling/vim-airline'		" Lean & mean status/tabline
+Plug 'rosenfeld/conque-term'	" Consoles as buffers
+Plug 'tpope/vim-surround'		" Parentheses, brackets, quotes, XML tags, and more
+Plug 'jiangmiao/auto-pairs'		" Insert or delete brackets, parens, quotes in pair
+Plug 'tpope/vim-fugitive'		" A Git wrapper so awesome, it should be illegal
 
 call plug#end()
 filetype on
